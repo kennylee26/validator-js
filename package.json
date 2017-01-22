@@ -1,0 +1,40 @@
+{
+  "name": "BaseJsProject",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {},
+  "description": "基础前端gulp的构建项目，用作开始编写js插件/工具的时候。",
+  "license": "BSD-3-Clause",
+  "author": {
+    "name": "KennyLee",
+    "email": "kennylee26@gmail.com"
+  },
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-delete-lines": "0.0.7",
+    "gulp-header": "^1.8.8",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-livereload": "^3.8.1",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^3.0.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.8",
+    "gulp-zip": "^3.2.0",
+    "jshint": "^2.9.4",
+    "path": "^0.12.7",
+    "promise": "^7.1.1",
+    "promised-del": "^1.0.2"
+  }
+}
