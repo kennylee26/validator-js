@@ -18,8 +18,15 @@
 ```
     src
     ├── html            # 存放使用的html文件，例如demo.html等。暂时未创建。
-    ├── javascript
-    └── libs            # 存放第三方工具包，例如jQeury，暂时未创建。
+    ├── images
+    ├── javascript      # js源码
+    ├── libs            # 存放第三方工具包，例如jQeury，暂时未创建。
+    └── styles
+        ├── css         # css文件
+        └── scss        # scss文件
 ```
 
-PS: css 或 sass暂时没支持，因为目前一些情况下不需要。
+注意事项:
+
+* css 和 sass 构建后会统一存放到 `styles` 目录下,因为这两者是等价的,只是后者需要编译。
+* 除了根目录的 `.gitignore` 文件,其他都是可以删除的,存放多余的 `.gitignore` 仅仅是为了提交空目录。
