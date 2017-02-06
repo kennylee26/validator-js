@@ -80,7 +80,7 @@ gulp.task('scripts', gulp.parallel('copy:libs', function () {
 
 //images
 gulp.task('images', function () {
-    var imgSrc = base + '/' + imageDir,
+    var imgSrc = base + '/' + imageDir + '/**',
         imgDst = _public + '/' + imageDir;
     return gulp.src(imgSrc)
         .pipe($.imagemin())
