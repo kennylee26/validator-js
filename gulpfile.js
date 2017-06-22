@@ -143,7 +143,7 @@ gulp.task('live', gulp.series('build', function () {
     // js
     gulp.watch(base + '/' + jsDir + '/**.js', gulp.parallel('scripts'));
     // html
-    gulp.watch(base + '/*.html', gulp.parallel('copy:html'));
+    gulp.watch(base + '/html' + '/*.html', gulp.parallel('copy:html'));
     // styles
     gulp.watch([base + '/' + imageDir + '/**', pathHelper.dev.getBaseStyleDir() + '/**'], gulp.parallel('styles'));
 }));
