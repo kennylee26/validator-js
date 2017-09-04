@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 
 var base = 'src', build = 'build', jsDir = 'javascript';
 var dist = 'dist', _public = build + '/public';
-var projectName = 'elasticsearch';
+var projectName = 'validator-js';
 var allFileName = projectName.replace(/-/g, '.') + '.min.js';
 
 gulp.task('copy:html', function () {

@@ -1,12 +1,12 @@
 {
-  "name": "BaseJsProject",
+  "name": "validator-js",
   "version": "0.0.1",
   "private": true,
   "dependencies": {},
-  "description": "基础前端gulp的构建项目，用作开始编写js插件/工具的时候。",
+  "description": "提供前端的验证工具",
   "license": "BSD-3-Clause",
   "author": {
-    "name": "KennyLee",
+    "name": "Kennylee",
     "email": "kennylee26@gmail.com"
   },
   "devDependencies": {
