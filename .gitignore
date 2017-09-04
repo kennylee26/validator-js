@@ -24,7 +24,6 @@ Thumbs.db
 
 # Compiled source #  
 ################### 
-dist/
 node_modules/
 .sass-cache
 build/
