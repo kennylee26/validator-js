@@ -18,6 +18,6 @@ required:true,validType:['loginName','length[6,32]']
 
     验证的规则组合，`string` 的数组，注意格式！其中 `length[6,32]` 的意思是，使用 `length` 验证规则，并且传入参数为 `6` 和 `32`。
 
-更多使用例子：[参考](src/html/demo.html)
+**更多验证规则可自行扩展**，详细使用例子：[参见](src/html/demo.html)
 
 
