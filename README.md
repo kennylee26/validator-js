@@ -4,10 +4,11 @@
 
 ### usage:
 
-在 `input` 和 `select` 元素上，添加 `data-validator-options` 属性，然后编写json的配置信息，例如:
+在 `input` 和 `select` 元素上，添加 `data-validator-options` 属性，然后编写json的验证器配置信息，例如:
 
-```
-required:true,validType:['loginName','length[6,32]']
+```html
+<input id="login_name" name="login_name"
+    data-validator-options="required:true,validType:['loginName','length[6,32]']" >
 ```
 
 * required
