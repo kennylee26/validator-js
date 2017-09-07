@@ -28,7 +28,9 @@
                 if (Array.isArray(errors) && errors.length > 0) {
                     for (var i = 0, l = errors.length; i !== l; i++) {
                         var o = errors[i];
-                        console.log('input name: %s, invalid message: %s', o.target['name'], o.error['invalidMessage']);
+                        var _input = o.target;//出现问题的input元素
+                        var _error = o.error;//错误信息
+                        console.log('input name: %s, invalid message: %s', _input['name'], _error['invalidMessage']);
                     }
                 }
             });
