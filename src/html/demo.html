@@ -11,12 +11,13 @@
         $(function () {
             $('#f').submit(function (e) {
                 e.preventDefault();
-                var _validator = new Validator({//扩展验证的例子
+                var _validator = new Validator({
                     message: {
-                        myPwd: '无效的密码，请输入6-36个字符。'
+                        myPwd: '无效的密码，请输入6-36个字符。',
+                        required: 'HelloWorld' //例子，重定义这这个表单提交时的错误信息
                     },
                     validType: {
-                        myPwd: {
+                        myPwd: {//例子，扩展自己的验证规则
                             check: function (s) {
                                 return s.length >= 6 && s.length <= 36;
                             }
