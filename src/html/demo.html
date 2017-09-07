@@ -23,7 +23,7 @@
                         }
                     }
                 });
-                var errors = _validator.checkForm(document.getElementById('f'));
+                var errors = _validator.checkForm(this);
                 if (Array.isArray(errors) && errors.length > 0) {
                     for (var i = 0, l = errors.length; i !== l; i++) {
                         var o = errors[i];

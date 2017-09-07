@@ -1,5 +1,4 @@
 var gulp = require('gulp'),
-    path = require('path'),
     Promise = require('promise'),
     fs = require('fs'),
     pkg = require('./package.json'),
