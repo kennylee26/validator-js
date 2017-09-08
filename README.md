@@ -22,3 +22,12 @@
 **更多验证规则可自行扩展**，详细使用例子：[参见](src/html/demo.html)
 
 在线体验: [http://jsrun.net/PYiKp](http://jsrun.net/PYiKp)
+
+### Todo List 
+
+- [ ] INPUT/SELECT元素，支持*maxLength*和HTML5中一些基础验证属性，*required*和*pattern*。
+- [ ] 支持*min*和*max*，这两个HTML5中对于number和date的验证属性。 
+- [ ] 精炼代码，替换ES6环境。
+- [ ] 支持AMD和CMD。
+
+
