@@ -215,7 +215,6 @@
                     params.push(t);
                 }
             }
-            //console.log('name: %s, params str: %s', rex[1], paramStr);
             return {
                 name: rex[1],
                 params: params
@@ -309,7 +308,9 @@
                         var s = $.trim(value);
                         return s.length >= param[0] && s.length <= param[1];
                     } else {
-                        console.log('invalid params for length...');
+                        if (window['console'] && console['log']) {
+                            console.log('invalid params for length...');
+                        }
                         return false;
                     }
                 }
@@ -323,7 +324,9 @@
                  */
                 check: function (value, param) {
                     if (!_.isNotEmptyArray(param)) {
-                        console.log('param must be array...');
+                        if (window['console'] && console['log']) {
+                            console.log('param must be array...');
+                        }
                         return false;
                     }
                     var els = _.getElementsByName(param[0]);
