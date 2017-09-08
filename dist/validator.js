@@ -46,7 +46,7 @@
             return [].concat(inputs, selects);
         },
         getElementsByName: function (s, parent) {
-            if (_d['getElementsByName'] && this.isElement(parent)) {
+            if (!this.isElement(parent) && _d['getElementsByName']) {
                 return _d.getElementsByName(s);
             } else {
                 var a = [];
@@ -292,7 +292,7 @@
                 }
             },
             safePwd: {
-                check: function (value, param) {
+                check: function (value) {
                     return safePassword(value);
                 }
             },
@@ -308,9 +308,7 @@
                         var s = $.trim(value);
                         return s.length >= param[0] && s.length <= param[1];
                     } else {
-                        if (window['console'] && console['log']) {
-                            console.log('invalid params for length...');
-                        }
+                        alert('ValidType "length": invalid params for length...');
                         return false;
                     }
                 }
@@ -319,20 +317,18 @@
                 /**
                  *
                  * @param value
-                 * @param param 另外一个对比元素的name
+                 * @param param 另外一个对比元素的name，这里提醒下注意唯一性。
+                 * @param parent 父级元素，一般是form
                  * @returns {boolean}
                  */
-                check: function (value, param) {
+                check: function (value, param, parent) {
                     if (!_.isNotEmptyArray(param)) {
-                        if (window['console'] && console['log']) {
-                            console.log('param must be array...');
-                        }
+                        alert('ValidType "equalTo": param must be array...');
                         return false;
                     }
-                    var els = _.getElementsByName(param[0]);
+                    var o = _.getSingleElementByName(param[0], parent);
                     var s;
-                    if (_.isNotEmptyArray(els)) {
-                        var o = els[0];
+                    if (o) {
                         s = _.getValue(o);
                     }
                     return value === s;
@@ -428,7 +424,7 @@
                 return;
             }
             var val = _.getValue(_.getSingleElementByName(name, parentElement)),
-                isValid = _validator.check(val, parms);
+                isValid = _validator.check(val, parms, parentElement);
             var _self = this;
             return {
                 isValid: isValid,
