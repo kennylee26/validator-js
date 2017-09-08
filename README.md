@@ -21,4 +21,4 @@
 
 **更多验证规则可自行扩展**，详细使用例子：[参见](src/html/demo.html)
 
-
+在线体验: [http://jsrun.net/PYiKp](http://jsrun.net/PYiKp)
